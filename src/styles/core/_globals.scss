@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input {
+  font-family: 'Rubik', sans-serif;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
+body.dont-overflow {
+  overflow: hidden;
+}
+
+html.dont-overflow {
+  overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+  background: white;
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsl(231, 69%, 60%);
+  border-radius: 20px;
+}

@@ -1,0 +1,101 @@
+.hero {
+  &__content {
+    @media screen and (min-width: 850px) {
+      max-width: 1200px;
+      margin: auto;
+      min-height: rem(550);
+      place-items: center;
+    }
+  }
+
+  &__img-area {
+    position: relative;
+    margin-bottom: rem(20);
+
+    @media screen and (min-width: 850px) {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      content: '';
+      background: $SoftBlue;
+      width: 80%;
+      height: 75%;
+      display: block;
+      position: absolute;
+      bottom: 5px;
+      right: 0;
+      border-radius: 100px 0 0 100px;
+
+      @media screen and (min-width: 700px) {
+        width: 63%;
+      }
+
+      @media screen and (min-width: 850px) {
+        left: 25%;
+        right: unset;
+        width: 100vw;
+        bottom: -15px;
+        height: 78%;
+        border-radius: 190px 0 0 190px;
+      }
+    }
+  }
+
+  &__image-illustration {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    max-width: 610px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__text-area {
+    text-align: center;
+
+    @media screen and (min-width: 850px) {
+      grid-row: 1;
+      text-align: left;
+    }
+  }
+
+  &__description {
+    margin: rem(17) 0;
+
+    @media screen and (min-width: 850px) {
+      margin: rem(19) 0 rem(25);
+      max-width: 46ch;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    min-height: rem(48);
+
+    @media screen and (min-width: 850px) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__chrome-btn {
+    width: 48%;
+
+    @media screen and (min-width: 850px) {
+      min-width: rem(170);
+      width: unset;
+      margin-right: rem(20);
+    }
+  }
+
+  &__firefox-btn {
+    width: 48%;
+
+    @media screen and (min-width: 850px) {
+      min-width: rem(170);
+      width: unset;
+    }
+  }
+}

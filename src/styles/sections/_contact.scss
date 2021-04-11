@@ -1,0 +1,112 @@
+.contact {
+  background: $SoftBlue;
+  margin-top: rem(90);
+
+  &__content {
+    padding-bottom: rem(45);
+    padding-top: rem(45);
+    text-align: center;
+
+    @media screen and (min-width: 750px) {
+      padding-bottom: rem(50);
+      padding-top: rem(50);
+    }
+
+    h2 {
+      color: white;
+      margin: rem(10) 0 rem(25);
+
+      @media screen and (min-width: 750px) {
+        max-width: 23ch;
+        margin: rem(30) auto;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 750px) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+
+  &__input-label {
+    position: relative;
+    margin-bottom: rem(10);
+    border-radius: rem(5);
+
+    @media screen and (min-width: 750px) {
+      margin-bottom: 0;
+      width: 100%;
+      max-width: rem(370);
+      margin-right: rem(20);
+    }
+  }
+
+  &__input-label.show-error {
+    border: 3px solid $SoftRed;
+    background: $SoftRed;
+    text-align: left;
+    margin-top: -3px;
+
+    &::before {
+      height: 20px;
+      content: url('../../public/images/icon-error.svg');
+      position: absolute;
+      top: rem(14);
+      right: 13px;
+    }
+
+    &::after {
+      content: "Whoops, make sure it's an email";
+      color: white;
+      font-size: rem(14);
+      width: 100%;
+      text-align: left;
+      margin-left: 12px;
+    }
+
+    .contact__email-input {
+      margin-bottom: rem(3);
+    }
+  }
+
+  &__email-input {
+    padding: em(17) em(15);
+    font-size: rem(15);
+    border: none;
+    border-radius: rem(3);
+    outline: none;
+    width: 100%;
+
+    &:focus {
+      outline: 2px dashed $SoftRed;
+    }
+  }
+
+  &__submit-button {
+    padding: em(17) em(15);
+    font-size: rem(15);
+    border: none;
+    border-radius: rem(5);
+    color: white;
+    background: $SoftRed;
+    cursor: pointer;
+    transition: color 0.2s ease, background-color 0.2s ease;
+
+    &:focus {
+      outline: 2px dashed $SoftRed;
+    }
+
+    &:hover {
+      color: $SoftRed;
+      background: white;
+      border: 2px solid $SoftRed;
+      padding: em(15) em(12);
+    }
+  }
+}

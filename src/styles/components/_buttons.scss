@@ -1,0 +1,58 @@
+.primary-btn {
+  text-decoration: none;
+  background: $SoftBlue;
+  color: $White;
+  font-size: clamp(rem(14), 4.4vw, rem(16));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: rem(6);
+  transition: color 0.25s ease, background 0.25s ease;
+
+  &:hover {
+    color: $SoftBlue;
+    background: transparent;
+    border: 2px solid $SoftBlue;
+    font-weight: 500;
+  }
+}
+
+.secondary-btn {
+  text-decoration: none;
+  background: #ebebeb;
+  color: $VeryDarkBlue;
+  font-size: clamp(rem(14), 4.4vw, rem(16));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: rem(6);
+  font-weight: 500;
+  box-shadow: 0 10px 10px 1px rgba(187, 187, 187, 0.35);
+  transition: color 0.25s ease, background 0.25s ease, font-size 0.1s ease;
+
+  &:hover {
+    color: #777777;
+    background: transparent;
+    border: 2px solid $VeryDarkBlue;
+    font-size: clamp(rem(15), 4.4vw, rem(17));
+    font-weight: 500;
+  }
+}
+
+.tertiary-btn {
+  border: 2px solid $White;
+  font-size: rem(20);
+  font-weight: 400;
+  padding: em(9);
+  margin-top: rem(25);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: color 0.25s ease, background-color 0.25s ease;
+
+  &:hover {
+    color: black;
+    background: $White;
+  }
+}

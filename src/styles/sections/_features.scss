@@ -1,0 +1,146 @@
+.features {
+  margin-top: rem(100);
+
+  @media screen and (min-width: 850px) {
+    margin-top: rem(50);
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__description {
+    margin: rem(10) auto rem(30);
+    max-width: 50ch;
+  }
+
+  &__slider-menu {
+    list-style: none;
+
+    @media screen and (min-width: 850px) {
+      display: flex;
+      justify-content: center;
+      width: rem(750);
+      margin: auto;
+    }
+
+    li {
+      border-top: 1px solid rgba(0, 0, 0, 0.219);
+
+      &:last-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+      }
+
+      @media screen and (min-width: 850px) {
+        border-top: unset;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+      }
+    }
+  }
+
+  &__slider-item {
+    border: none;
+    background: transparent;
+    font-size: rem(18);
+    font-weight: 500;
+    position: relative;
+    padding: em(17);
+    outline: none;
+    cursor: pointer;
+
+    @media screen and (min-width: 850px) {
+      width: rem(250);
+    }
+
+    &::after {
+      content: '';
+      width: 68%;
+      height: 4px;
+      display: none;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background: red;
+      position: absolute;
+
+      @media screen and (min-width: 850px) {
+        width: 100%;
+      }
+    }
+
+    &__.active::after {
+      display: block;
+    }
+  }
+
+  &__slider-item.--active {
+    &::after {
+      display: block;
+    }
+  }
+
+  &__slider-content {
+    margin-top: rem(40);
+    place-items: center;
+
+    @media screen and (min-width: 850px) {
+      text-align: left;
+      margin-top: rem(50);
+    }
+  }
+
+  &__img-area {
+    position: relative;
+    margin-bottom: rem(60);
+
+    @media screen and (min-width: 850px) {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      content: '';
+      background: $SoftBlue;
+      width: 100vw;
+      height: 93%;
+      display: block;
+      position: absolute;
+      bottom: -40px;
+      right: 25%;
+      border-radius: 0 120px 120px 0;
+
+      @media screen and (min-width: 850px) {
+        border-radius: 0 190px 190px 0;
+        height: 95%;
+        bottom: -60px;
+      }
+    }
+  }
+
+  &__image-illustration {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    max-width: 610px;
+  }
+
+  &__text-area {
+    @media screen and (min-width: 850px) {
+      margin-left: rem(60);
+    }
+  }
+
+  &__slider-description {
+    margin: rem(22) auto;
+    max-width: 50ch;
+  }
+
+  &__moreinfo-btn {
+    display: none;
+
+    @media screen and (min-width: 850px) {
+      display: flex;
+      width: 130px;
+      height: 50px;
+    }
+  }
+}

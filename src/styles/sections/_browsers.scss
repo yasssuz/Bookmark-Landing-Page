@@ -1,0 +1,72 @@
+.browsers {
+  margin-top: rem(85);
+
+  @media screen and (min-width: 850px) {
+    margin-top: rem(180);
+  }
+
+  &__content {
+    text-align: center;
+
+    p {
+      max-width: 50ch;
+      margin: auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(18);
+  }
+
+  &__cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+
+    @media screen and (min-width: 850px) {
+      flex-direction: row;
+      margin-top: rem(20);
+    }
+  }
+
+  &__card {
+    margin-top: rem(35);
+    width: 100%;
+    max-width: rem(290);
+    padding: rem(33) 0 0;
+    box-shadow: 0 6px 10px 2px rgba(177, 177, 177, 0.377);
+    border-radius: rem(12);
+
+    @media screen and (min-width: 850px) {
+      margin: 0 rem(20);
+
+      &:nth-child(2) {
+        margin-top: 30px;
+      }
+
+      &:nth-child(3) {
+        margin-top: 60px;
+      }
+    }
+
+    img {
+      margin-bottom: rem(28);
+    }
+
+    h3 {
+      margin-bottom: rem(5);
+    }
+  }
+
+  &__button-area {
+    margin-top: rem(25);
+    border-top: dashed 1px rgba(0, 0, 0, 0.205);
+    padding: rem(20);
+
+    a {
+      min-height: rem(51);
+    }
+  }
+}

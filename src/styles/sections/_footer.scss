@@ -1,0 +1,90 @@
+.footer {
+  background: $VeryDarkBlue;
+
+  &__content {
+    padding-top: rem(35);
+    padding-bottom: rem(35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media screen and (min-width: 800px) {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+  }
+
+  &__logo {
+    margin-bottom: rem(40);
+
+    @media screen and (min-width: 800px) {
+      margin: 0;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @media screen and (min-width: 800px) {
+      flex-direction: row;
+      margin-left: rem(50);
+    }
+  }
+
+  &__nav-link {
+    font-size: rem(17);
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $White;
+    font-weight: 300;
+    width: 100%;
+    letter-spacing: 3px;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $SoftRed;
+    }
+  }
+
+  &__nav-link + &__nav-link {
+    margin-top: rem(25);
+
+    @media screen and (min-width: 800px) {
+      margin-top: 0;
+      margin-left: rem(40);
+    }
+  }
+
+  &__icons {
+    margin-top: rem(50);
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 800px) {
+      margin: 0;
+      margin-left: auto;
+    }
+
+    svg {
+      cursor: pointer;
+
+      path {
+        transition: fill 0.2s ease;
+      }
+    }
+
+    #twitter-icon:hover path {
+      fill: #08a0e9;
+    }
+
+    #facebook-icon:hover path {
+      fill: #4060a5;
+    }
+  }
+}
