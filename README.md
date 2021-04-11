@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [https://bookmarklandingpage.vercel.app/](https://bookmarklandingpage.vercel.app/)
+- Solution URL: [https://www.frontendmentor.io/solutions/bookmark-landing-page-using-scss-advanced-pseudo-elements-and-js-tQjNzA8xH](https://www.frontendmentor.io/solutions/bookmark-landing-page-using-scss-advanced-pseudo-elements-and-js-tQjNzA8xH)
 
 ## My process
 
