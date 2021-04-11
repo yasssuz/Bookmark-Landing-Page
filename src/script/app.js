@@ -42,15 +42,15 @@ function displaySliderContent(target) {
   if (target.classList.contains('first-button')) {
     sliderTitle.textContent = 'Bookmark in one click';
     sliderParagraph.textContent = 'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.';
-    sliderIllustration.src = '../public/images/illustration-features-tab-1.svg';
+    sliderIllustration.src = '../images/illustration-features-tab-1.svg';
   } else if (target.classList.contains('second-button')) {
     sliderTitle.textContent = 'Intelligent Search';
     sliderParagraph.textContent = 'Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.';
-    sliderIllustration.src = '../public/images/illustration-features-tab-2.svg';
+    sliderIllustration.src = '../images/illustration-features-tab-2.svg';
   } else if (target.classList.contains('third-button')) {
     sliderTitle.textContent = 'Share your bookmarks';
     sliderParagraph.textContent = 'Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.';
-    sliderIllustration.src = '../public/images/illustration-features-tab-3.svg';
+    sliderIllustration.src = '../images/illustration-features-tab-3.svg';
   }
 }
 

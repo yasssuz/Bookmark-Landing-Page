@@ -976,7 +976,7 @@ body::-webkit-scrollbar-thumb {
 
 .contact__input-label.show-error::before {
   height: 20px;
-  content: url("../../public/images/icon-error.svg");
+  content: url("../../images/icon-error.svg");
   position: absolute;
   top: 0.875rem;
   right: 13px;
